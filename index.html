@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Tata Cara Solat</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🕌 Panduan Tata Cara Solat</h1>
+            <p class="subtitle">Panduan lengkap tata cara solat dengan bacaan niat dan doa</p>
+        </header>
+
+        <div class="general-guide">
+            <h2>Panduan Umum Sebelum Solat</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Bersuci</h3>
+                    <p>Pastikan tubuh, pakaian, dan tempat solat dalam keadaan suci. Lakukan wudhu terlebih dahulu.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Menghadap Kiblat</h3>
+                    <p>Pastikan menghadap ke arah Kiblat (Ka'bah di Makkah) saat melaksanakan solat.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Waktu Solat</h3>
+                    <p>Laksanakan solat pada waktu yang telah ditentukan sesuai dengan masing-masing solat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="prayer-tabs">
+            <button class="tab-button active" onclick="showPrayer('subuh')">Solat Subuh</button>
+            <button class="tab-button" onclick="showPrayer('zuhur')">Solat Zuhur</button>
+            <button class="tab-button" onclick="showPrayer('asar')">Solat Asar</button>
+            <button class="tab-button" onclick="showPrayer('maghrib')">Solat Maghrib</button>
+            <button class="tab-button" onclick="showPrayer('isya')">Solat Isya</button>
+            <button class="tab-button" onclick="showPrayer('tata-cara')">Tata Cara Solat</button>
+        </div>
+
+        <!-- Solat Subuh -->
+        <div id="subuh" class="prayer-content active">
+            <div class="prayer-section">
+                <h2>Solat Subuh (2 Rakaat)</h2>
+                
+                <h3>Niat Solat Subuh</h3>
+                <div class="arabic-text">
+                    أُصَلِّى فَرْضَ الصُّبْحِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى
+                </div>
+                <div class="transliteration">
+                    "Ushalli fardha ash-shubhi rak'ataini mustaqbilal qiblati adaa-an lillaahi ta'aala"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Aku berniat solat fardhu Subuh dua rakaat menghadap kiblat karena Allah Ta'ala"
+                </div>
+
+                <div class="highlight-box">
+                    Waktu: Dari terbit fajar hingga sebelum terbit matahari
+                </div>
+            </div>
+        </div>
+
+        <!-- Solat Zuhur -->
+        <div id="zuhur" class="prayer-content">
+            <div class="prayer-section">
+                <h2>Solat Zuhur (4 Rakaat)</h2>
+                
+                
+                <h3>Niat Solat Zuhur</h3>
+                <div class="arabic-text">
+                    أُصَلِّى فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى
+                </div>
+                <div class="transliteration">
+                    "Ushalli fardha azh-zhuhri arba'a raka'aatin mustaqbilal qiblati adaa-an lillaahi ta'aala"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Aku berniat solat fardhu Zuhur empat rakaat menghadap kiblat karena Allah Ta'ala"
+                </div>
+
+                <div class="highlight-box">
+                    Waktu: Dari tergelincir matahari hingga bayangan sama panjang dengan bendanya
+                </div>
+            </div>
+        </div>
+
+        <!-- Solat Asar -->
+        <div id="asar" class="prayer-content">
+            <div class="prayer-section">
+                <h2>Solat Asar (4 Rakaat)</h2>
+                
+                <h3>Niat Solat Asar</h3>
+                <div class="arabic-text">
+                    أُصَلِّى فَرْضَ الْعَصْرِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى
+                </div>
+                <div class="transliteration">
+                    "Ushalli fardha al-'ashri arba'a raka'aatin mustaqbilal qiblati adaa-an lillaahi ta'aala"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Aku berniat solat fardhu Asar empat rakaat menghadap kiblat karena Allah Ta'ala"
+                </div>
+
+                <div class="highlight-box">
+                    Waktu: Dari bayangan sama panjang dengan bendanya hingga terbenam matahari
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Solat Maghrib -->
+        <div id="maghrib" class="prayer-content">
+            <div class="prayer-section">
+                <h2>Solat Maghrib (3 Rakaat)</h2>
+                
+                <h3>Niat Solat Maghrib</h3>
+                <div class="arabic-text">
+                    أُصَلِّى فَرْضَ الْمَغْرِبِ ثَلَاثَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى
+                </div>
+                <div class="transliteration">
+                    "Ushalli fardha al-maghribi thalaatha raka'aatin mustaqbilal qiblati adaa-an lillaahi ta'aala"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Aku berniat solat fardhu Maghrib tiga rakaat menghadap kiblat karena Allah Ta'ala"
+                </div>
+
+                <div class="highlight-box">
+                    Waktu: Dari terbenam matahari hingga hilang mega merah
+                </div>
+            </div>
+        </div>
+
+        <!-- Solat Isya -->
+        <div id="isya" class="prayer-content">
+            <div class="prayer-section">
+                <h2>Solat Isya (4 Rakaat)</h2>
+                
+                <h3>Niat Solat Isya</h3>
+                <div class="arabic-text">
+                    أُصَلِّى فَرْضَ الْعِشَاءِ أَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلَّهِ تَعَالَى
+                </div>
+                <div class="transliteration">
+                    "Ushalli fardha al-'ishaa-i arba'a raka'aatin mustaqbilal qiblati adaa-an lillaahi ta'aala"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Aku berniat solat fardhu Isya empat rakaat menghadap kiblat karena Allah Ta'ala"
+                </div>
+
+                <div class="highlight-box">
+                    Waktu: Dari hilang mega merah hingga terbit fajar
+                </div>
+            </div>
+        </div>
+
+        <!-- Tata Cara Solat -->
+        <div id="tata-cara" class="prayer-content">
+            <div class="prayer-section">
+                <h2>Tata Cara Solat</h2>
+                
+                <h3>1. Takbiratul Ihram</h3>
+                <div class="arabic-text">
+                    اللَّهُ أَكْبَرُ
+                </div>
+                <div class="transliteration">
+                    "Allaahu Akbar"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Allah Maha Besar"
+                </div>
+
+                <h3>2. Doa Iftitah</h3>
+                <div class="arabic-text">
+                    سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلَا إِلَهَ غَيْرُكَ
+                </div>
+                <div class="transliteration">
+                    "Subhaanaka Allaahumma wa bihamdika wa tabaarakasmukaَwa ta'aalaa jadduka wa laa ilaaha ghairuka"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Maha Suci Engkau ya Allah, dan dengan memuji-Mu, dan Maha Berkah nama-Mu, dan Maha Tinggi keagungan-Mu, dan tiada Tuhan selain Engkau"
+                </div>
+
+                <h3>3. Ta'awudz</h3>
+                <div class="arabic-text">
+                    أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ
+                </div>
+                <div class="transliteration">
+                    "A'uudzu billaahi minash-shaythaanir rajiim"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Aku berlindung kepada Allah dari godaan syaitan yang terkutuk"
+                </div>
+
+                <h3>4. Basmalah</h3>
+                <div class="arabic-text">
+                    بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+                </div>
+                <div class="transliteration">
+                    "Bismillaahir Rahmaanir Rahiim"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang"
+                </div>
+
+                <h3>5. Al-Fatihah</h3>
+                <div class="arabic-text">
+                    الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+                </div>
+                <div class="transliteration">
+                    "Alhamdulillaahi rabbil 'aalamiin. Ar-rahmaanir rahiim. Maaliki yaumiddiin. Iyyaaka na'budu wa iyyaaka nasta'iin. Ihdinash shiraathal mustaqiim. Shiraathalladziina an'amta 'alaihim ghairil maghdhuubi 'alaihim wa ladh dhaallin."
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Segala puji bagi Allah, Tuhan semesta alam. Yang Maha Pengasih lagi Maha Penyayang. Yang menguasai hari pembalasan. Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami meminta pertolongan. Tunjukilah kami jalan yang lurus. (yaitu) jalan orang-orang yang telah Engkau beri nikmat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat."
+                </div>
+
+                <h3>6. Ruku'</h3>
+                <div class="arabic-text">
+                    سُبْحَانَ رَبِّيَ الْعَظِيمِ
+                </div>
+                <div class="transliteration">
+                    "Subhaana rabbiyal 'azhiim" (3x)
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Maha Suci Tuhanku Yang Maha Agung"
+                </div>
+
+                <h3>7. I'tidal (Bangun dari Ruku')</h3>
+                <div class="arabic-text">
+                    سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ
+                </div>
+                <div class="transliteration">
+                    "Sami'allaahu liman hamidah"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Allah mendengar orang yang memuji-Nya"
+                </div>
+
+                <div class="arabic-text">
+                    رَبَّنَا وَلَكَ الْحَمْدُ
+                </div>
+                <div class="transliteration">
+                    "Rabbanaa wa lakal hamd"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Ya Tuhan kami, bagi-Mu segala pujian"
+                </div>
+
+                <h3>8. Sujud</h3>
+                <div class="arabic-text">
+                    سُبْحَانَ رَبِّيَ الْأَعْلَى
+                </div>
+                <div class="transliteration">
+                    "Subhaana rabbiyal a'laa" (3x)
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Maha Suci Tuhanku Yang Maha Tinggi"
+                </div>
+
+                <h3>9. Duduk Antara Dua Sujud</h3>
+                <div class="arabic-text">
+                    رَبِّ اغْفِرْ لِي
+                </div>
+                <div class="transliteration">
+                    "Rabbighfir lii"
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Ya Tuhanku, ampunilah aku"
+                </div>
+
+                <h3>10. Tasyahud Awal (Rakaat Ke-2)</h3>
+                <div class="arabic-text">
+                    التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ
+                </div>
+                <div class="transliteration">
+                    "Attahiyyaatu lillaahi wash shalawaatu wath thayyibaatu. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu an laa ilaaha illallaahu wa asyhadu anna Muhammadan rasuulullaah."
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Segala penghormatan, keberkahan, dan kebaikan hanya bagi Allah. Semoga keselamatan, rahmat Allah, dan berkah-Nya tercurah kepadamu wahai Nabi. Semoga keselamatan tercurah kepada kami dan hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah dan aku bersaksi bahwa Muhammad adalah utusan Allah."
+                </div>
+
+                <h3>11. Tasyahud Akhir</h3>
+                <p>Baca tasyahud awal + shalawat:</p>
+                <div class="arabic-text">
+                    اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ
+                </div>
+                <div class="transliteration">
+                    "Allaahumma shalli 'alaa Muhammadin wa 'alaa aali Muhammadin kamaa shallaita 'alaa Ibraahiima wa 'alaa aali Ibraahiima innaka hamiidun majiid. Allaahumma baarik 'alaa Muhammadin wa 'alaa aali Muhammadin kamaa baarakta 'alaa Ibraahiima wa 'alaa aali Ibraahiima innaka hamiidun majiid."
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Ya Allah, berikanlah shalawat kepada Muhammad dan keluarga Muhammad sebagaimana Engkau telah memberikan shalawat kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, berikanlah keberkahan kepada Muhammad dan keluarga Muhammad sebagaimana Engkau telah memberikan keberkahan kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia."
+                </div>
+
+                <h3>12. Salam</h3>
+                <div class="arabic-text">
+                    السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ
+                </div>
+                <div class="transliteration">
+                    "Assalaamu 'alaikum wa rahmatullaahi" (ke kanan dan ke kiri)
+                </div>
+                <div class="translation">
+                    <strong>Artinya:</strong> "Semoga keselamatan dan rahmat Allah tercurah kepada kalian"
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPrayer(prayerName) {
+            // Sembunyikan semua isi doa
+            const contents = document.querySelectorAll('.prayer-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Hapus kelas aktif dari semua tombol
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Tampilkan konten doa yang dipilih
+            document.getElementById(prayerName).classList.add('active');
+
+            // Tambahkan kelas aktif ke tombol yang diklik
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
